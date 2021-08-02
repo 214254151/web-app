@@ -22,6 +22,7 @@ export class AppComponent {
     // this.aField=(this.location=="home")? "AT HOME" : "FAR AWAY";
     // this.aField=(this.location=="home")? "green" : "yellow";
     // this.aField=(this.location=="about")? "blue" : "navy";
+    //commit
   
   }
 }
