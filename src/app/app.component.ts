@@ -13,6 +13,7 @@ export class AppComponent {
   condition = false;
   displaySidebar = false;
   location: String = "Home";
+  field= "what";
   // img src="assets/images/cupcake.jpg"
   // img src="assets/images/logo2.jpg"   
 
