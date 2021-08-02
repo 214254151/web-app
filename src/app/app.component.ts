@@ -14,6 +14,7 @@ export class AppComponent {
   displaySidebar = false;
   location: String = "Home";
   field= "what";
+  backgroundImage:string= 'asserts/Images/cupcake.jpg';
   // img src="assets/images/cupcake.jpg"
   // img src="assets/images/logo2.jpg"   
 

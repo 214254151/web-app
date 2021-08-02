@@ -1,6 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+.main_body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: blue;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
 
+.menu-button-row{
+    /* background-color : rgb(121, 95, 44);  */
+    padding: 20px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.menu-button-row button{
+    flex: 1;
+    margin: 10px;
+    
+}
+
+/* #grow_this_1{
+    background-color:goldenrod;
+    flex: 2;
+}
+
+#grow_this_2{
+    background-color:goldenrod;
+    flex: 2;
+} */
+
+
+.menu-button-row > button{
+    flex: 1;
+    margin: 10px;
+    background-color:rgb(92, 117, 112);
+}
+
+.basic{
+    color:rgb(178, 223, 231);
+}
+.basic1{
+    color:rgb(0, 0, 0);
+}
+.basic2{
+    color:rgb(6, 70, 167);
 }
