@@ -1,0 +1,41 @@
+<p>contact-us works!</p>
+
+< <div style="width: 400px;">
+
+    <form action = "mailto: admin@site.com">
+        <p>
+            <mat-form-field appearance="fill">
+            <mat-label>name</mat-label>
+            <input matInput placeholder="User" type="text">
+            </mat-form-field>    
+        </p>
+    
+        
+        <p> 
+            <mat-form-field appearance="fill">
+                <mat-label>email</mat-label>
+                <input matInput placeholder="Email" type="email">
+                </mat-form-field>
+        </p>
+        
+        <p>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Message</mat-label>
+            <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
+            <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+            <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+          </mat-form-field>
+        </p>
+        
+        <input type="hidden" value= "getBrowserData();">
+    
+    
+    <div style="display: flex; justify-content: space-around;">
+    
+    </div>
+    <button mat-raised-button color="accent" button type="submit" style="margin-right: 20px;"> Submit </button> 
+    <button mat-raised-button color="accent" button type="submit"> Submit </button>
+    <button mat-raised-button color="accent" button type="reset"> Reset </button>
+    
+    </form> 
+
