@@ -1,26 +1,26 @@
+<app-header></app-header>
 
+<!-- .app-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+} -->
 
 <div>
   <nav class="navbar">
-    <!-- logo -->
-    <div class="navbar-brand">
-      <a class="navbar-item " >
-        <img src="assets/images/logo2.jpg"   >
-        <h2>Welcome to  Kay-Leigh's Site</h2>
-              
-      </a>
-      
-    </div>
     
-  </nav>
-  
-  
-
-<!-- {{title}} -->
-
+    <!-- logo -->
+    <!-- <div class="navbar-brand">    
+      <a class="navbar-item " >
+        <img src="assets/images/logo2.jpg"     > 
+          
+      </a>
+    </div>  -->
+  </nav> 
 
     <div class="menu-button-row">
-      <button mat-raised-button color="accent"(click)="goto('home');" >Menu</button>
+      <button mat-raised-button color="accent"(click)="goto('home');" >Home</button>
+      <button mat-raised-button color="accent"(click)="goto('menu');" >Menu</button>
       <button mat-raised-button color="accent"(click)="goto('about');">About Us</button>
       <button mat-raised-button color="accent"(click)="goto('contact');">Contact Us</button>
       <button mat-raised-button color="accent"(click)="goto('gallery');">Gallery</button>
@@ -31,7 +31,7 @@
 
 
 
-<div *ngIf="location=='contacts'">
+<div *ngIf="location=='contact'">
   <app-contact-us></app-contact-us>
 </div> 
 
@@ -39,16 +39,11 @@
   <app-about-us></app-about-us>
 </div> 
 
+<!-- <br>
+<div>
+  <img [src]="myImage" alt="">
+  
+</div> -->
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- <app-footer></app-footer> -->
+<app-footer></app-footer>

@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+   
 })
 export class AppComponent {
   title = 'Web-App';
@@ -14,7 +15,7 @@ export class AppComponent {
   displaySidebar = false;
   location: String = "Home";
   field= "what";
-  backgroundImage:string= 'asserts/Images/cupcake.jpg';
+  myImage:string= 'assets/images/cupcake.jpg';
   // img src="assets/images/cupcake.jpg"
   // img src="assets/images/logo2.jpg"   
 
@@ -28,3 +29,8 @@ export class AppComponent {
   
   }
 }
+
+
+
+
+

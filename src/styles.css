@@ -1,18 +1,50 @@
-.main_body{
+
+
+h3{
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    background-color: blue;
+    color: rgb(250, 231, 202);
+    
+    
+}
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+    text-indent: 0px;
+    text-align-last: center;
+    text-transform: initial;
+    color: rgb(251, 230, 199);
+ 
+    
+
+}
+
+@keyframes animate{
+    0%,18%, 20%, 50%, 1%, 60%, 92%
+    {
+        color: brown;
+        text-shadow: none;
+    }
+    18%, 1%,30%, 50%, 1%, 100%
+{
+    color: #fff;
+    text-shadow: 0 0px #03bcf4,
+    0 0 30px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4
+} 
 }
 
 
 .menu-button-row{
-    /* background-color : rgb(121, 95, 44);  */
+    background-color : rgb(230, 134, 233); 
     padding: 20px;
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
 }
 
 .menu-button-row button{
@@ -47,3 +79,10 @@
 .basic2{
     color:rgb(6, 70, 167);
 }
+
+
+
+    
+
+
+  

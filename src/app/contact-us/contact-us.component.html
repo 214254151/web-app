@@ -1,41 +1,55 @@
-<p>contact-us works!</p>
+<!-- <p>contact-us works!</p> -->
 
-< <div style="width: 400px;">
+<div style="display: flex; justify-content: space-around;">
+    <h3>
+        Get in touch!
+   </h3>
+   </div>
 
-    <form action = "mailto: admin@site.com">
-        <p>
+<div style="display: flex; justify-content: space-around;">
+    <form action = "mailto: admin@site.com" >
+          <p>
+              <mat-form-field appearance="fill">
+              <mat-label>name</mat-label>
+              <input required ngModel matInput placeholder="User" type="text">
+              <div class="alert alert-danger " *ngIf> </div>
+              </mat-form-field>    
+          </p>
+          <p>
             <mat-form-field appearance="fill">
-            <mat-label>name</mat-label>
-            <input matInput placeholder="User" type="text">
+            <mat-label>contacts</mat-label>
+            <input required ngModel matInput placeholder="contacts" type="cell number">
+            <!-- <div *ngif="phone.error && (phone.invalid || phone.touched)">  
+                <small class="text-danger" *ngif="phone.error.required"Phone number is required></small>
+                <small class="text-danger" *ngif="phone.error.pattern"Phone number mus be 10 digits></small>
+            </div> -->
             </mat-form-field>    
         </p>
-    
-        
-        <p> 
-            <mat-form-field appearance="fill">
-                <mat-label>email</mat-label>
-                <input matInput placeholder="Email" type="email">
-                </mat-form-field>
-        </p>
-        
-        <p>
-        <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Message</mat-label>
-            <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
-            <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
-            <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
-          </mat-form-field>
-        </p>
-        
-        <input type="hidden" value= "getBrowserData();">
-    
-    
-    <div style="display: flex; justify-content: space-around;">
-    
-    </div>
-    <button mat-raised-button color="accent" button type="submit" style="margin-right: 20px;"> Submit </button> 
-    <button mat-raised-button color="accent" button type="submit"> Submit </button>
-    <button mat-raised-button color="accent" button type="reset"> Reset </button>
-    
-    </form> 
+           
+          <p> 
+              <mat-form-field appearance="fill">
+                  <mat-label>email</mat-label>
+                  <input matInput placeholder="Email" type="email">
+                  </mat-form-field>
+          </p> 
+           
+          <p>
+          <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Message</mat-label>
+              <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
+              <!-- <mat-error align="end" *ngif="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                  put valid email</mat-error>> -->
+              <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+              <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+            </mat-form-field>
+          </p>
+          
+          <input type="hidden" value= "getBrowserData();"> 
+          
+        <div style="display: flex; justify-content: space-around;">
+            <button mat-raised-button color="accent" button type="send" > Send </button> 
+            <button mat-raised-button color="accent" button type="reset"> Reset </button>
+        </div>
+    </form>   
+</div>
 
