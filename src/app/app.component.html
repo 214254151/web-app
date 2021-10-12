@@ -8,28 +8,23 @@
 
 <div>
   <nav class="navbar">
-    
     <!-- logo -->
     <!-- <div class="navbar-brand">    
       <a class="navbar-item " >
         <img src="assets/images/logo2.jpg"     > 
-          
       </a>
     </div>  -->
   </nav> 
-
-    <div class="menu-button-row">
-      <button mat-raised-button color="accent"(click)="goto('home');" >Home</button>
-      <button mat-raised-button color="accent"(click)="goto('menu');" >Menu</button>
-      <button mat-raised-button color="accent"(click)="goto('about');">About Us</button>
-      <button mat-raised-button color="accent"(click)="goto('contact');">Contact Us</button>
-      <button mat-raised-button color="accent"(click)="goto('gallery');">Gallery</button>
-      <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-    </div>
-
 </div>
-
-
+<div class="menu-button-row">
+  <button mat-raised-button color="accent"(click)="goto('home');" >Home</button>
+  <button mat-raised-button color="accent"(click)="goto('menu');" >Menu</button>
+  <button mat-raised-button color="accent"(click)="goto('about');">About Us</button>
+  <button mat-raised-button color="accent"(click)="goto('contact');">Contact Us</button>
+  <button mat-raised-button color="accent"(click)="goto('gallery');">Gallery</button>
+  <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+  <img src="assets/images/instagram.png"     >
+</div>
 
 <div *ngIf="location=='contact'">
   <app-contact-us></app-contact-us>
@@ -38,12 +33,5 @@
 <div *ngIf="location=='about'">
   <app-about-us></app-about-us>
 </div> 
-
-<!-- <br>
-<div>
-  <img [src]="myImage" alt="">
-  
-</div> -->
-
 
 <app-footer></app-footer>

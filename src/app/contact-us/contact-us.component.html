@@ -7,14 +7,16 @@
    </div>
 
 <div style="display: flex; justify-content: space-around;">
-    <form action = "mailto: admin@site.com" >
+    <form action = "https://formsubmit.co/abongiletshopi@gmail.com"method="POST" >
           <p>
               <mat-form-field appearance="fill">
               <mat-label>name</mat-label>
-              <input required ngModel matInput placeholder="User" type="text">
-              <div class="alert alert-danger " *ngIf> </div>
+              <input required ngModel matInput placeholder="User name" type="text" >
               </mat-form-field>    
+              <small class="text danger" name is aria-required></small>
           </p>
+          
+
           <p>
             <mat-form-field appearance="fill">
             <mat-label>contacts</mat-label>
@@ -29,7 +31,7 @@
           <p> 
               <mat-form-field appearance="fill">
                   <mat-label>email</mat-label>
-                  <input matInput placeholder="Email" type="email">
+                  <input matInput placeholder="Email" type="email" required>
                   </mat-form-field>
           </p> 
            
@@ -47,7 +49,7 @@
           <input type="hidden" value= "getBrowserData();"> 
           
         <div style="display: flex; justify-content: space-around;">
-            <button mat-raised-button color="accent" button type="send" > Send </button> 
+            <button mat-raised-button color="accent" button type="submit" > submit </button> 
             <button mat-raised-button color="accent" button type="reset"> Reset </button>
         </div>
     </form>   

@@ -6,9 +6,8 @@ h3{
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    color: rgb(250, 231, 202);
-    
-    
+    color: rgb(0, 0, 0);  
+    animation: animate is ease-in-out infinite alternate;
 }
 
 p{
@@ -17,40 +16,31 @@ p{
     text-indent: 0px;
     text-align-last: center;
     text-transform: initial;
-    color: rgb(251, 230, 199);
- 
-    
-
+    color: rgb(0, 0, 0);
+    animation: animate is ease-in-out infinite alternate;
 }
 
 @keyframes animate{
-    0%,18%, 20%, 50%, 1%, 60%, 92%
-    {
-        color: brown;
-        text-shadow: none;
+    from{
+        text-shadow: 0 0 20px #289aab;
     }
-    18%, 1%,30%, 50%, 1%, 100%
-{
-    color: #fff;
-    text-shadow: 0 0px #03bcf4,
-    0 0 30px #03bcf4,
-    0 0 40px #03bcf4,
-    0 0 80px #03bcf4
-} 
+
+    to{
+    text-shadow: 0 0 30px #289aab, 0 0 10px #289aab,
+    } 
 }
 
 
 .menu-button-row{
-    background-color : rgb(230, 134, 233); 
-    padding: 20px;
+    /* background-color : rgb(255, 191, 191);  */
+    /* padding: 20px; */
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .menu-button-row button{
     flex: 1;
     margin: 10px;
-    
 }
 
 /* #grow_this_1{
@@ -64,11 +54,11 @@ p{
 } */
 
 
-.menu-button-row > button{
+/* .menu-button-row > button{
     flex: 1;
     margin: 10px;
     background-color:rgb(92, 117, 112);
-}
+} */
 
 .basic{
     color:rgb(178, 223, 231);

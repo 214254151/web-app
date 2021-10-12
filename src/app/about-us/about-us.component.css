@@ -3,8 +3,8 @@ body {
     margin: 0px;
     padding: 100px;
     font-family: Arial;
-    background: #f9f3f3;
-    background-image: url('/assets/images/cover.jpg') ;
+    background: #ffe5e5;
+    background-image: url('/assets/images/cake.gif') ;
     background-size: cover;
     
     background-blend-mode: darken;
