@@ -18,13 +18,11 @@
           
 
           <p>
-            <mat-form-field appearance="fill">
+            <mat-form-field hintLabel="Max 10 characters" appearance="fill">
             <mat-label>contacts</mat-label>
-            <input required ngModel matInput placeholder="contacts" type="cell number">
-            <!-- <div *ngif="phone.error && (phone.invalid || phone.touched)">  
-                <small class="text-danger" *ngif="phone.error.required"Phone number is required></small>
-                <small class="text-danger" *ngif="phone.error.pattern"Phone number mus be 10 digits></small>
-            </div> -->
+            <example-tel-input formControlName="tel" required></example-tel-input>
+            <input matInput #input maxlength="10" placeholder="cell number">
+            <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
             </mat-form-field>    
         </p>
            
@@ -49,7 +47,7 @@
           <input type="hidden" value= "getBrowserData();"> 
           
         <div style="display: flex; justify-content: space-around;">
-            <button mat-raised-button color="accent" button type="submit" > submit </button> 
+            <button mat-raised-button color="accent" button type="submit" > Submit </button> 
             <button mat-raised-button color="accent" button type="reset"> Reset </button>
         </div>
     </form>   
